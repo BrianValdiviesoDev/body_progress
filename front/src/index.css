@@ -1,0 +1,11 @@
+:root{
+    --main_color: #1fc49a;
+    --secondary_color: #2e2e2e;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0px;
+    background-color: var(--secondary_color);
+    color:white;
+}

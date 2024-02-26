@@ -1,0 +1,35 @@
+.overlap{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal{
+    width: 60%;
+    background-color: #808080;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.modal-body{
+    padding: 2rem;
+    display: flex;
+    background-color: #d4d4d4;
+    color: black;
+}
+
+.modal-footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}

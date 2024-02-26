@@ -1,0 +1,67 @@
+@import './index.css';
+
+button{
+    background-color: var(--main_color);
+    color: white;
+    padding: 0.5rem 0.7rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+input{
+    padding: 0.5rem 0.7rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+.add-button{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--main_color);
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.add-button > svg > g > path {
+    stroke: var(--secondary_color);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.filters{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.navigation > .tab{
+    padding: 1rem;
+    cursor: pointer;
+    width: 33%;
+    text-align: center;
+}
+
+.navigation > .tab.active{
+    border-bottom: 2px solid var(--main_color);
+}
+
+.chart-grid{
+    padding: 1rem;
+    display: flex;
+}
