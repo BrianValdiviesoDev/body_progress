@@ -19,7 +19,8 @@ export interface BodyImage {
 }
 
 export interface MeasureEntity {
-    date: Date;
+    _id: string;
+    date: string;
     height?: number;
     weight?: number;
     muscle?: number;

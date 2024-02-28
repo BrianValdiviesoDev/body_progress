@@ -105,8 +105,10 @@ const listMeasures = async (req: Request, res: Response, next: any) => {
 	}
     
 	try {
+		const initDate = req.query.initDate as string;
+		const endDate = req.query.endDate as string;
 		const measureService = new MeasureService();
-		const result = await measureService.listMeasures(req.auth.payload);
+		const result = await measureService.listMeasures(req.auth.payload, initDate, endDate);
 		res.status(200);
 		res.send(result);
 	} catch (e: any) {

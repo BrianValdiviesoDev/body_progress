@@ -10,7 +10,8 @@
 }
 
 .modal{
-    width: 60%;
+    min-width: 60%;
+    max-height: 95vh;
     background-color: #808080;
 }
 

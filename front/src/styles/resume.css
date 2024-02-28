@@ -1,0 +1,21 @@
+.resume{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    .value-card{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title{
+            margin-bottom: 0.5rem;
+        }
+
+        .value{
+            font-size: 1.5rem;
+            font-weight: 600;;
+        }
+    }
+}

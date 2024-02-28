@@ -76,8 +76,14 @@ export class MeasureService {
 		return await MeasureModel.findOne({ _id: new Types.ObjectId(id), user: user.sub });
 	}
 
-	async listMeasures(user:JWTPayload): Promise<MeasureDocument[]> {
-		return await MeasureModel.find({ user: user.sub });
+	async listMeasures(user:JWTPayload, initDate?:string, endDate?:string): Promise<MeasureDocument[]> {
+		const filter:any = { user: user.sub };
+		if(initDate && endDate){
+			filter.date = { $gte: new Date(initDate), $lte: new Date(endDate) };
+		}
+
+		return await MeasureModel.find(filter).sort({ date: 1 });
+
 	}
 
 	async deleteMeasure(id:string, user:JWTPayload): Promise<MeasureDocument> {

@@ -43,11 +43,18 @@ input{
     margin: 1rem;
 }
 
+.green-label{
+    color: var(--green);
+}
+
+.red-label{
+    color: var(--red);
+}
+
 .navigation{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem;
 }
 
 .navigation > .tab{
@@ -59,9 +66,4 @@ input{
 
 .navigation > .tab.active{
     border-bottom: 2px solid var(--main_color);
-}
-
-.chart-grid{
-    padding: 1rem;
-    display: flex;
 }
