@@ -1,15 +1,17 @@
 {
-    "name": "demo_api_bank",
+    "name": "body_progress_api",
     "version": "1.0.0",
     "description": "",
     "main": "./src/index.ts",
     "scripts": {
+        "build": "tsc",
         "dev": "nodemon ./src/index.ts",
         "test": "jest --runInBand --testTimeout=10000",
         "test:watch": "jest --watch --runInBand --detectOpenHandles",
         "test:cov": "jest --coverage --runInBand --detectOpenHandles",
         "prepare": "husky install",
-        "lint": "eslint \"src/**/*.ts\" --fix"
+        "lint": "eslint \"src/**/*.ts\" --fix",
+        "start": "node dist/index.js"
     },
     "author": "Brian Valdivieso",
     "license": "ISC",
